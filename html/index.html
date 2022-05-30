@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+    <script>
+        window.addEventListener('message', (event) => {	            
+					var item = event.data;
+					if (item !== undefined && item.verif === "ui") {		                
+            new Notify({
+              status: item.type,
+              title: item.title,
+              text: item.text,
+              effect: item.anim,
+              speed: item.speed,
+              customClass: null,
+              customIcon: null,
+              showIcon: true,
+              showCloseButton: true,
+              autoclose: true,
+              autotimeout: 5000,
+              gap: 20,
+              distance: 20,
+              type: item.theme,
+              position: item.position
+            })
+					}
+				});
+    </script>
+  </body>
+</html>
