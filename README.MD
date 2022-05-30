@@ -9,7 +9,6 @@
  2 type of animation : fade, slide
  Cooldown with progressbar
  more features in the client.lua
- Easy to use
 
 # Screenshot
 
