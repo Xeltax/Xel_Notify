@@ -5,9 +5,13 @@
 
 # Features
  4 type of notification :  success, error, info, warning
+
  3 different theme : 1,2,3
+
  2 type of animation : fade, slide
+
  Cooldown with progressbar
+ 
  more features in the client.lua
 
 # Screenshot
